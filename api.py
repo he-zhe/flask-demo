@@ -8,5 +8,4 @@ def index():
 
 @app.route('/players/<player_id>', methods=['GET'])
 def get(player_id):
-    print("this should run: " + str(player_id))
     return db.get_player_name_by_id(player_id)
